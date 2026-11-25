@@ -1,0 +1,775 @@
+<mxfile>
+  <diagram name="Stock Up" id="Stock_Up">
+    <mxGraphModel grid="1" page="0" background="#ffffff">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pkg_model" value="model" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1948" width="2480" height="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_exception" value="exception" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="905" width="390" height="441" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_util" value="util" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2550" y="905" width="730" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_dto" value="dto" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="2110" y="10" width="1170" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_persistencia" value="persistencia" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1405" width="2010" height="498" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_controller" value="controller" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="905" width="2010" height="455" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg_view" value="view" style="shape=folder;tabWidth=130;tabHeight=24;tabPosition=left;html=1;fontStyle=1;fontSize=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=-2;fillColor=#fafafa;strokeColor=#666666;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="2010" height="850" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaPrincipal" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaPrincipal" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="60" width="300" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaPrincipal_a" value="- btnEmpresas: JButton&lt;br&gt;- btnProdutos: JButton&lt;br&gt;- btnCompra: JButton&lt;br&gt;- btnVenda: JButton&lt;br&gt;- btnMetricas: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaPrincipal">
+          <mxGeometry x="0" y="40" width="300" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaPrincipal_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaPrincipal">
+          <mxGeometry x="0" y="127" width="300" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaPrincipal_m" value="+ abrirTelaEmpresas(): void&lt;br&gt;+ abrirTelaProdutos(): void&lt;br&gt;+ abrirTelaCompra(): void&lt;br&gt;+ abrirTelaVenda(): void&lt;br&gt;+ abrirTelaMetricas(): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaPrincipal">
+          <mxGeometry x="0" y="133" width="300" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaEmpresas" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaEmpresas" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="360" width="340" height="355" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaEmpresas_a" value="- controller: EmpresaController&lt;br&gt;- txtCnpj: JTextField&lt;br&gt;- txtRazaoSocial: JTextField&lt;br&gt;- txtTelefone: JTextField&lt;br&gt;- txtEmail: JTextField&lt;br&gt;- cmbTipo: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- tblEmpresas: JTable&lt;br&gt;- btnSalvar: JButton&lt;br&gt;- btnEditar: JButton&lt;br&gt;- btnExcluir: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaEmpresas">
+          <mxGeometry x="0" y="40" width="340" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaEmpresas_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaEmpresas">
+          <mxGeometry x="0" y="202" width="340" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaEmpresas_m" value="+ getController(): EmpresaController&lt;br&gt;+ setController(controller: EmpresaController): void&lt;br&gt;+ salvarEmpresa(): void&lt;br&gt;+ editarEmpresa(): void&lt;br&gt;+ excluirEmpresa(): void&lt;br&gt;+ atualizarTabela(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaEmpresas">
+          <mxGeometry x="0" y="208" width="340" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaProdutos" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaProdutos" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="340" height="475" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaProdutos_a" value="- controller: ProdutoController&lt;br&gt;- txtCodigo: JTextField&lt;br&gt;- txtNome: JTextField&lt;br&gt;- txtDescricao: JTextField&lt;br&gt;- txtCategoria: JTextField&lt;br&gt;- txtPrecoCusto: JTextField&lt;br&gt;- txtPreco: JTextField&lt;br&gt;- txtPrecoAtacado: JTextField&lt;br&gt;- txtQtdMinAtacado: JTextField&lt;br&gt;- txtEstoqueMinimo: JTextField&lt;br&gt;- cmbEmpresa: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- cmbUnidadeMedida: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- tblProdutos: JTable&lt;br&gt;- btnSalvar: JButton&lt;br&gt;- btnEditar: JButton&lt;br&gt;- btnExcluir: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaProdutos">
+          <mxGeometry x="0" y="40" width="340" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaProdutos_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaProdutos">
+          <mxGeometry x="0" y="292" width="340" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaProdutos_m" value="+ getController(): ProdutoController&lt;br&gt;+ setController(controller: ProdutoController): void&lt;br&gt;+ salvarProduto(): void&lt;br&gt;+ editarProduto(): void&lt;br&gt;+ excluirProduto(): void&lt;br&gt;+ consultarEstoque(): void&lt;br&gt;+ destacarAbaixoDoMinimo(): void&lt;br&gt;+ atualizarTabela(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaProdutos">
+          <mxGeometry x="0" y="298" width="340" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCompra" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaCompra" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="835" y="360" width="325" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCompra_a" value="- controller: MovimentacaoController&lt;br&gt;- cmbEmpresa: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- cmbFornecedor: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- cmbProduto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- txtQuantidade: JTextField&lt;br&gt;- txtPrecoUnitario: JTextField&lt;br&gt;- tblItens: JTable&lt;br&gt;- lblTotal: JLabel&lt;br&gt;- btnAdicionar: JButton&lt;br&gt;- btnRemover: JButton&lt;br&gt;- btnConfirmar: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaCompra">
+          <mxGeometry x="0" y="40" width="325" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCompra_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaCompra">
+          <mxGeometry x="0" y="217" width="325" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCompra_m" value="+ getController(): MovimentacaoController&lt;br&gt;+ setController(controller: MovimentacaoController): void&lt;br&gt;+ adicionarItem(): void&lt;br&gt;+ removerItem(): void&lt;br&gt;+ atualizarTotal(): void&lt;br&gt;+ confirmarCompra(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaCompra">
+          <mxGeometry x="0" y="223" width="325" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaVenda" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaVenda" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="360" width="325" height="415" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaVenda_a" value="- controller: MovimentacaoController&lt;br&gt;- cmbEmpresa: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- cmbProduto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- txtQuantidade: JTextField&lt;br&gt;- txtDataInicio: JTextField&lt;br&gt;- txtDataFim: JTextField&lt;br&gt;- tblItens: JTable&lt;br&gt;- tblHistorico: JTable&lt;br&gt;- lblTotal: JLabel&lt;br&gt;- btnAdicionar: JButton&lt;br&gt;- btnRemover: JButton&lt;br&gt;- btnConfirmar: JButton&lt;br&gt;- btnFiltrar: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaVenda">
+          <mxGeometry x="0" y="40" width="325" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaVenda_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaVenda">
+          <mxGeometry x="0" y="247" width="325" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaVenda_m" value="+ getController(): MovimentacaoController&lt;br&gt;+ setController(controller: MovimentacaoController): void&lt;br&gt;+ adicionarItem(): void&lt;br&gt;+ removerItem(): void&lt;br&gt;+ atualizarTotal(): void&lt;br&gt;+ confirmarVenda(): void&lt;br&gt;+ filtrarHistorico(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaVenda">
+          <mxGeometry x="0" y="253" width="325" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaMetricas" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaMetricas" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1625" y="360" width="320" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaMetricas_a" value="- controller: MetricasController&lt;br&gt;- cmbPeriodo: JComboBox&amp;lt;Periodo&amp;gt;&lt;br&gt;- txtData: JTextField&lt;br&gt;- tblMetricas: JTable&lt;br&gt;- lblFaturamento: JLabel&lt;br&gt;- lblMaisVendido: JLabel&lt;br&gt;- lblMaiorPeriodo: JLabel&lt;br&gt;- btnCalcular: JButton" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaMetricas">
+          <mxGeometry x="0" y="40" width="320" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaMetricas_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaMetricas">
+          <mxGeometry x="0" y="172" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaMetricas_m" value="+ getController(): MetricasController&lt;br&gt;+ setController(controller: MetricasController): void&lt;br&gt;+ calcularMetricas(): void&lt;br&gt;+ atualizarTabela(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaMetricas">
+          <mxGeometry x="0" y="178" width="320" height="87" as="geometry" />
+        </mxCell>
+        <mxCell id="Se1" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaEmpresas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="320" />
+              <mxPoint x="240.0" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se2" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaProdutos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="320" />
+              <mxPoint x="630.0" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se3" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaCompra" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="320" />
+              <mxPoint x="997.5" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se4" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaVenda" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="320" />
+              <mxPoint x="1342.5" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se5" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaMetricas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="320" />
+              <mxPoint x="1785.0" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EmpresaController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;EmpresaController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="965" width="370" height="265" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaController_a" value="- empresaDAO: EmpresaDAO&lt;br&gt;- movController: MovimentacaoController" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaController">
+          <mxGeometry x="0" y="40" width="370" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaController_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="EmpresaController">
+          <mxGeometry x="0" y="82" width="370" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaController_m" value="+ getEmpresaDAO(): EmpresaDAO&lt;br&gt;+ setEmpresaDAO(empresaDAO: EmpresaDAO): void&lt;br&gt;+ getMovController(): MovimentacaoController&lt;br&gt;+ setMovController(movController: MovimentacaoController): void&lt;br&gt;+ cadastrar(dto: EmpresaDTO): void&lt;br&gt;+ editar(dto: EmpresaDTO): void&lt;br&gt;+ excluir(cnpj: String): void&lt;br&gt;+ buscar(cnpj: String): EmpresaDTO&lt;br&gt;+ listar(): List&amp;lt;EmpresaDTO&amp;gt;&lt;br&gt;- paraDTO(empresa: Empresa): EmpresaDTO&lt;br&gt;- paraModel(dto: EmpresaDTO): Empresa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaController">
+          <mxGeometry x="0" y="88" width="370" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;ProdutoController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="965" width="370" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoController_a" value="- produtoDAO: ProdutoDAO&lt;br&gt;- empresaDAO: EmpresaDAO&lt;br&gt;- movController: MovimentacaoController" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoController">
+          <mxGeometry x="0" y="40" width="370" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoController_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="ProdutoController">
+          <mxGeometry x="0" y="97" width="370" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoController_m" value="+ getProdutoDAO(): ProdutoDAO&lt;br&gt;+ setProdutoDAO(produtoDAO: ProdutoDAO): void&lt;br&gt;+ getEmpresaDAO(): EmpresaDAO&lt;br&gt;+ setEmpresaDAO(empresaDAO: EmpresaDAO): void&lt;br&gt;+ getMovController(): MovimentacaoController&lt;br&gt;+ setMovController(movController: MovimentacaoController): void&lt;br&gt;+ cadastrar(dto: ProdutoDTO): void&lt;br&gt;+ editar(dto: ProdutoDTO): void&lt;br&gt;+ excluir(codigo: String): void&lt;br&gt;+ buscar(codigo: String): ProdutoDTO&lt;br&gt;+ listar(): List&amp;lt;ProdutoDTO&amp;gt;&lt;br&gt;+ consultarEstoque(codigo: String): double&lt;br&gt;+ listarAbaixoDoMinimo(): List&amp;lt;ProdutoDTO&amp;gt;&lt;br&gt;- paraDTO(produto: Produto): ProdutoDTO&lt;br&gt;- paraModel(dto: ProdutoDTO): Produto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoController">
+          <mxGeometry x="0" y="103" width="370" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;MovimentacaoController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="840" y="965" width="640" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoController_a" value="- compraDAO: CompraDAO&lt;br&gt;- vendaDAO: VendaDAO&lt;br&gt;- produtoDAO: ProdutoDAO&lt;br&gt;- empresaDAO: EmpresaDAO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoController">
+          <mxGeometry x="0" y="40" width="640" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoController_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MovimentacaoController">
+          <mxGeometry x="0" y="112" width="640" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoController_m" value="+ getCompraDAO(): CompraDAO&lt;br&gt;+ setCompraDAO(compraDAO: CompraDAO): void&lt;br&gt;+ getVendaDAO(): VendaDAO&lt;br&gt;+ setVendaDAO(vendaDAO: VendaDAO): void&lt;br&gt;+ getProdutoDAO(): ProdutoDAO&lt;br&gt;+ setProdutoDAO(produtoDAO: ProdutoDAO): void&lt;br&gt;+ getEmpresaDAO(): EmpresaDAO&lt;br&gt;+ setEmpresaDAO(empresaDAO: EmpresaDAO): void&lt;br&gt;+ registrarCompra(dto: MovimentacaoDTO): void&lt;br&gt;+ registrarVenda(dto: MovimentacaoDTO): void&lt;br&gt;+ listarVendas(inicio: LocalDate, fim: LocalDate): List&amp;lt;MovimentacaoDTO&amp;gt;&lt;br&gt;+ temMovimentacao(empresa: Empresa): boolean&lt;br&gt;+ temMovimentacao(produto: Produto): boolean&lt;br&gt;- paraDTO(movimentacao: Movimentacao): MovimentacaoDTO&lt;br&gt;- paraCompra(dto: MovimentacaoDTO): Compra&lt;br&gt;- paraVenda(dto: MovimentacaoDTO): Venda" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoController">
+          <mxGeometry x="0" y="118" width="640" height="252" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;MetricasController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1540" y="965" width="490" height="295" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasController_a" value="- vendaDAO: VendaDAO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MetricasController">
+          <mxGeometry x="0" y="40" width="490" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasController_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MetricasController">
+          <mxGeometry x="0" y="67" width="490" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasController_m" value="+ getVendaDAO(): VendaDAO&lt;br&gt;+ setVendaDAO(vendaDAO: VendaDAO): void&lt;br&gt;+ calcularTotalVendido(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularFaturamento(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularTicketMedio(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularMediaDiaria(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularMediana(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularDesvioPadrao(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularVariacao(periodo: Periodo, data: LocalDate): double&lt;br&gt;+ calcularParticipacao(produto: Produto, periodo: Periodo, data: LocalDate): double&lt;br&gt;+ agruparPorPeriodo(periodo: Periodo): Map&amp;lt;String, Double&amp;gt;&lt;br&gt;+ getProdutoMaisVendido(periodo: Periodo, data: LocalDate): Produto&lt;br&gt;+ getPeriodoMaiorVenda(periodo: Periodo): String&lt;br&gt;+ gerarMetricas(periodo: Periodo, data: LocalDate): MetricasDTO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MetricasController">
+          <mxGeometry x="0" y="73" width="490" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="Se6" value="" edge="1" parent="1" source="TelaEmpresas" target="EmpresaController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.4864864864864865;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se7" value="" edge="1" parent="1" source="TelaProdutos" target="ProdutoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.4864864864864865;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se8" value="" edge="1" parent="1" source="TelaCompra" target="MovimentacaoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.24609375;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se9" value="" edge="1" parent="1" source="TelaVenda" target="MovimentacaoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.78515625;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se10" value="" edge="1" parent="1" source="TelaMetricas" target="MetricasController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDAO" value="&lt;i&gt;«persistencia»&lt;/i&gt;&lt;br&gt;EmpresaDAO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85.0" y="1465" width="320" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDAO_a" value="- caminhoArquivo: String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDAO">
+          <mxGeometry x="0" y="40" width="320" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDAO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="EmpresaDAO">
+          <mxGeometry x="0" y="67" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDAO_m" value="+ getCaminhoArquivo(): String&lt;br&gt;+ setCaminhoArquivo(caminhoArquivo: String): void&lt;br&gt;+ salvar(objeto: Empresa): void&lt;br&gt;+ listar(): List&amp;lt;Empresa&amp;gt;&lt;br&gt;+ buscar(chave: String): Empresa&lt;br&gt;+ excluir(chave: String): void&lt;br&gt;- paraLinha(objeto: Empresa): String&lt;br&gt;- deLinha(linha: String): Empresa" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDAO">
+          <mxGeometry x="0" y="73" width="320" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDAO" value="&lt;i&gt;«persistencia»&lt;/i&gt;&lt;br&gt;ProdutoDAO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="475.0" y="1465" width="320" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDAO_a" value="- caminhoArquivo: String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoDAO">
+          <mxGeometry x="0" y="40" width="320" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDAO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="ProdutoDAO">
+          <mxGeometry x="0" y="67" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDAO_m" value="+ getCaminhoArquivo(): String&lt;br&gt;+ setCaminhoArquivo(caminhoArquivo: String): void&lt;br&gt;+ salvar(objeto: Produto): void&lt;br&gt;+ listar(): List&amp;lt;Produto&amp;gt;&lt;br&gt;+ buscar(chave: String): Produto&lt;br&gt;+ excluir(chave: String): void&lt;br&gt;- paraLinha(objeto: Produto): String&lt;br&gt;- deLinha(linha: String): Produto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoDAO">
+          <mxGeometry x="0" y="73" width="320" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="CompraDAO" value="&lt;i&gt;«persistencia»&lt;/i&gt;&lt;br&gt;CompraDAO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1000.0" y="1465" width="320" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="CompraDAO_a" value="- caminhoArquivo: String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="CompraDAO">
+          <mxGeometry x="0" y="40" width="320" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="CompraDAO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="CompraDAO">
+          <mxGeometry x="0" y="67" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="CompraDAO_m" value="+ getCaminhoArquivo(): String&lt;br&gt;+ setCaminhoArquivo(caminhoArquivo: String): void&lt;br&gt;+ salvar(objeto: Compra): void&lt;br&gt;+ listar(): List&amp;lt;Compra&amp;gt;&lt;br&gt;+ buscar(chave: String): Compra&lt;br&gt;+ excluir(chave: String): void&lt;br&gt;- paraLinha(objeto: Compra): String&lt;br&gt;- deLinha(linha: String): Compra" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="CompraDAO">
+          <mxGeometry x="0" y="73" width="320" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="VendaDAO" value="&lt;i&gt;«persistencia»&lt;/i&gt;&lt;br&gt;VendaDAO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1625.0" y="1465" width="320" height="205" as="geometry" />
+        </mxCell>
+        <mxCell id="VendaDAO_a" value="- caminhoArquivo: String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="VendaDAO">
+          <mxGeometry x="0" y="40" width="320" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="VendaDAO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="VendaDAO">
+          <mxGeometry x="0" y="67" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="VendaDAO_m" value="+ getCaminhoArquivo(): String&lt;br&gt;+ setCaminhoArquivo(caminhoArquivo: String): void&lt;br&gt;+ salvar(objeto: Venda): void&lt;br&gt;+ listar(): List&amp;lt;Venda&amp;gt;&lt;br&gt;+ buscar(chave: String): Venda&lt;br&gt;+ excluir(chave: String): void&lt;br&gt;- paraLinha(objeto: Venda): String&lt;br&gt;- deLinha(linha: String): Venda" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="VendaDAO">
+          <mxGeometry x="0" y="73" width="320" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Se11" value="" edge="1" parent="1" source="EmpresaController" target="EmpresaDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se12" value="" edge="1" parent="1" source="ProdutoController" target="ProdutoDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se13" value="" edge="1" parent="1" source="MovimentacaoController" target="ProdutoDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.2;exitY=1;entryX=0.75;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="968.0" y="1435" />
+              <mxPoint x="715.0" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se14" value="" edge="1" parent="1" source="MovimentacaoController" target="CompraDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se15" value="" edge="1" parent="1" source="ProdutoController" target="EmpresaDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.2;exitY=1;entryX=0.9;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="524.0" y="1435" />
+              <mxPoint x="373.0" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se16" value="" edge="1" parent="1" source="MovimentacaoController" target="EmpresaDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.1;exitY=1;entryX=0.75;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="904.0" y="1421" />
+              <mxPoint x="325.0" y="1421" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se17" value="" edge="1" parent="1" source="MovimentacaoController" target="VendaDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.8;exitY=1;entryX=0.25;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1352.0" y="1435" />
+              <mxPoint x="1705.0" y="1435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se18" value="" edge="1" parent="1" source="MetricasController" target="VendaDAO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se19" value="" edge="1" parent="1" source="ProdutoController" target="MovimentacaoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=1;exitY=0.17647058823529413;entryX=0;entryY=0.16216216216216217;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se20" value="" edge="1" parent="1" source="EmpresaController" target="MovimentacaoController" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.75;exitY=0;entryX=0.06;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="337.5" y="943" />
+              <mxPoint x="878.4" y="943" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Repositorio&lt;T&gt;" value="&lt;i&gt;«interface»&lt;/i&gt;&lt;br&gt;Repositorio&amp;lt;T&amp;gt;" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1750" width="300" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="Repositorio&lt;T&gt;_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Repositorio&lt;T&gt;">
+          <mxGeometry x="0" y="40" width="300" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Repositorio&lt;T&gt;_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Repositorio&lt;T&gt;">
+          <mxGeometry x="0" y="50" width="300" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Repositorio&lt;T&gt;_m" value="+ salvar(objeto: T): void&lt;br&gt;+ listar(): List&amp;lt;T&amp;gt;&lt;br&gt;+ buscar(chave: String): T&lt;br&gt;+ excluir(chave: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Repositorio&lt;T&gt;">
+          <mxGeometry x="0" y="56" width="300" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Se21" value="" edge="1" parent="1" source="EmpresaDAO" target="Repositorio&lt;T&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245.0" y="1710" />
+              <mxPoint x="950.0" y="1710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se22" value="" edge="1" parent="1" source="ProdutoDAO" target="Repositorio&lt;T&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="635.0" y="1710" />
+              <mxPoint x="950.0" y="1710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se23" value="" edge="1" parent="1" source="CompraDAO" target="Repositorio&lt;T&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160.0" y="1710" />
+              <mxPoint x="950.0" y="1710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se24" value="" edge="1" parent="1" source="VendaDAO" target="Repositorio&lt;T&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1785.0" y="1710" />
+              <mxPoint x="950.0" y="1710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Exception" value="&lt;i&gt;«java.lang»&lt;/i&gt;&lt;br&gt;Exception" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2230" y="965" width="180" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="Exception_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Exception">
+          <mxGeometry x="0" y="40" width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Exception_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Exception">
+          <mxGeometry x="0" y="50" width="180" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Exception_m" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Exception">
+          <mxGeometry x="0" y="56" width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="EstoqueInsuficienteException" value="&lt;i&gt;«exception»&lt;/i&gt;&lt;br&gt;EstoqueInsuficienteException" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="1095" width="320" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="EstoqueInsuficienteException_a" value="- saldoDisponivel: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EstoqueInsuficienteException">
+          <mxGeometry x="0" y="40" width="320" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="EstoqueInsuficienteException_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="EstoqueInsuficienteException">
+          <mxGeometry x="0" y="67" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="EstoqueInsuficienteException_m" value="+ getSaldoDisponivel(): double&lt;br&gt;+ setSaldoDisponivel(saldoDisponivel: double): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EstoqueInsuficienteException">
+          <mxGeometry x="0" y="73" width="320" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="DadoInvalidoException" value="&lt;i&gt;«exception»&lt;/i&gt;&lt;br&gt;DadoInvalidoException" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="1255" width="320" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="DadoInvalidoException_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="DadoInvalidoException">
+          <mxGeometry x="0" y="40" width="320" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="DadoInvalidoException_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="DadoInvalidoException">
+          <mxGeometry x="0" y="50" width="320" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="DadoInvalidoException_m" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="DadoInvalidoException">
+          <mxGeometry x="0" y="56" width="320" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Se25" value="" edge="1" parent="1" source="EstoqueInsuficienteException" target="Exception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se26" value="" edge="1" parent="1" source="DadoInvalidoException" target="Exception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2135" y="1288.0" />
+              <mxPoint x="2135" y="998.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ProdutoDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;ProdutoDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2135" y="60" width="330" height="655" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDTO_a" value="- codigo: String&lt;br&gt;- nome: String&lt;br&gt;- descricao: String&lt;br&gt;- categoria: String&lt;br&gt;- cnpjEmpresa: String&lt;br&gt;- unidadeMedida: String&lt;br&gt;- precoCusto: double&lt;br&gt;- preco: double&lt;br&gt;- precoAtacado: double&lt;br&gt;- qtdMinAtacado: double&lt;br&gt;- estoqueMinimo: double&lt;br&gt;- quantidade: double&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoDTO">
+          <mxGeometry x="0" y="40" width="330" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="ProdutoDTO">
+          <mxGeometry x="0" y="247" width="330" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="ProdutoDTO_m" value="+ getCodigo(): String&lt;br&gt;+ setCodigo(codigo: String): void&lt;br&gt;+ getNome(): String&lt;br&gt;+ setNome(nome: String): void&lt;br&gt;+ getDescricao(): String&lt;br&gt;+ setDescricao(descricao: String): void&lt;br&gt;+ getCategoria(): String&lt;br&gt;+ setCategoria(categoria: String): void&lt;br&gt;+ getCnpjEmpresa(): String&lt;br&gt;+ setCnpjEmpresa(cnpjEmpresa: String): void&lt;br&gt;+ getUnidadeMedida(): String&lt;br&gt;+ setUnidadeMedida(unidadeMedida: String): void&lt;br&gt;+ getPrecoCusto(): double&lt;br&gt;+ setPrecoCusto(precoCusto: double): void&lt;br&gt;+ getPreco(): double&lt;br&gt;+ setPreco(preco: double): void&lt;br&gt;+ getPrecoAtacado(): double&lt;br&gt;+ setPrecoAtacado(precoAtacado: double): void&lt;br&gt;+ getQtdMinAtacado(): double&lt;br&gt;+ setQtdMinAtacado(qtdMinAtacado: double): void&lt;br&gt;+ getEstoqueMinimo(): double&lt;br&gt;+ setEstoqueMinimo(estoqueMinimo: double): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ProdutoDTO">
+          <mxGeometry x="0" y="253" width="330" height="402" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;EmpresaDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2505" y="60" width="330" height="385" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDTO_a" value="- id: int&lt;br&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;br&gt;- tipo: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
+          <mxGeometry x="0" y="40" width="330" height="117" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="EmpresaDTO">
+          <mxGeometry x="0" y="157" width="330" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="EmpresaDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ setTipo(tipo: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
+          <mxGeometry x="0" y="163" width="330" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;MovimentacaoDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2505" y="485" width="330" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoDTO_a" value="- id: int&lt;br&gt;- data: LocalDate&lt;br&gt;- cnpjEmpresa: String&lt;br&gt;- cnpjFornecedor: String&lt;br&gt;- itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;- total: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
+          <mxGeometry x="0" y="40" width="330" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MovimentacaoDTO">
+          <mxGeometry x="0" y="142" width="330" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="MovimentacaoDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getData(): LocalDate&lt;br&gt;+ setData(data: LocalDate): void&lt;br&gt;+ getCnpjEmpresa(): String&lt;br&gt;+ setCnpjEmpresa(cnpjEmpresa: String): void&lt;br&gt;+ getCnpjFornecedor(): String&lt;br&gt;+ setCnpjFornecedor(cnpjFornecedor: String): void&lt;br&gt;+ getItens(): List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;+ setItens(itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;): void&lt;br&gt;+ getTotal(): double&lt;br&gt;+ setTotal(total: double): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
+          <mxGeometry x="0" y="148" width="330" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;MetricasDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2925" y="60" width="330" height="475" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasDTO_a" value="- totalVendido: double&lt;br&gt;- faturamento: double&lt;br&gt;- ticketMedio: double&lt;br&gt;- mediaDiaria: double&lt;br&gt;- mediana: double&lt;br&gt;- desvioPadrao: double&lt;br&gt;- variacao: double&lt;br&gt;- produtoMaisVendido: String&lt;br&gt;- periodoMaiorVenda: String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MetricasDTO">
+          <mxGeometry x="0" y="40" width="330" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MetricasDTO">
+          <mxGeometry x="0" y="187" width="330" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="MetricasDTO_m" value="+ getTotalVendido(): double&lt;br&gt;+ setTotalVendido(totalVendido: double): void&lt;br&gt;+ getFaturamento(): double&lt;br&gt;+ setFaturamento(faturamento: double): void&lt;br&gt;+ getTicketMedio(): double&lt;br&gt;+ setTicketMedio(ticketMedio: double): void&lt;br&gt;+ getMediaDiaria(): double&lt;br&gt;+ setMediaDiaria(mediaDiaria: double): void&lt;br&gt;+ getMediana(): double&lt;br&gt;+ setMediana(mediana: double): void&lt;br&gt;+ getDesvioPadrao(): double&lt;br&gt;+ setDesvioPadrao(desvioPadrao: double): void&lt;br&gt;+ getVariacao(): double&lt;br&gt;+ setVariacao(variacao: double): void&lt;br&gt;+ getProdutoMaisVendido(): String&lt;br&gt;+ setProdutoMaisVendido(produtoMaisVendido: String): void&lt;br&gt;+ getPeriodoMaiorVenda(): String&lt;br&gt;+ setPeriodoMaiorVenda(periodoMaiorVenda: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MetricasDTO">
+          <mxGeometry x="0" y="193" width="330" height="282" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacaoDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;ItemMovimentacaoDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2925" y="575" width="330" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacaoDTO_a" value="- codigoProduto: String&lt;br&gt;- quantidade: double&lt;br&gt;- precoUnitario: double&lt;br&gt;- subtotal: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ItemMovimentacaoDTO">
+          <mxGeometry x="0" y="40" width="330" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacaoDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="ItemMovimentacaoDTO">
+          <mxGeometry x="0" y="112" width="330" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacaoDTO_m" value="+ getCodigoProduto(): String&lt;br&gt;+ setCodigoProduto(codigoProduto: String): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getPrecoUnitario(): double&lt;br&gt;+ setPrecoUnitario(precoUnitario: double): void&lt;br&gt;+ getSubtotal(): double&lt;br&gt;+ setSubtotal(subtotal: double): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ItemMovimentacaoDTO">
+          <mxGeometry x="0" y="118" width="330" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Se27" value="" edge="1" parent="1" source="MovimentacaoDTO" target="ItemMovimentacaoDTO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;exitX=1;exitY=0.4411764705882353;entryX=0;entryY=0.24;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se27l0" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se27">
+          <mxGeometry x="-0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se27l1" value="1..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se27">
+          <mxGeometry x="0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se28" value="" edge="1" parent="1" source="pkg_controller" target="pkg_exception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5158730158730159;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se29" value="" edge="1" parent="1" source="pkg_persistencia" target="pkg_model" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.5;exitY=1;entryX=0.41330645161290325;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se30" value="" edge="1" parent="1" source="pkg_model" target="pkg_exception" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0.9213709677419355;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se31" value="" edge="1" parent="1" source="pkg_view" target="pkg_dto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se32" value="" edge="1" parent="1" source="pkg_controller" target="pkg_dto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=1;exitY=0.2;entryX=0;entryY=0.8;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2080" y="996.0" />
+              <mxPoint x="2080" y="690.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se33" value="" edge="1" parent="1" source="pkg_controller" target="pkg_model" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0;exitY=0.5;entryX=0;entryY=0.1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="1132.5" />
+              <mxPoint x="-10" y="2056.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Empresa" value="Empresa" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="2068" width="290" height="358" as="geometry" />
+        </mxCell>
+        <mxCell id="Empresa_a" value="- id: int&lt;br&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Empresa">
+          <mxGeometry x="0" y="28" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Empresa_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Empresa">
+          <mxGeometry x="0" y="130" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Empresa_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Empresa">
+          <mxGeometry x="0" y="136" width="290" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="Fornecedor" value="Fornecedor" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="135" y="2508" width="180" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="Fornecedor_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Fornecedor">
+          <mxGeometry x="0" y="28" width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Fornecedor_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Fornecedor">
+          <mxGeometry x="0" y="38" width="180" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Fornecedor_m" value="+ getTipo(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Fornecedor">
+          <mxGeometry x="0" y="44" width="180" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="Se34" value="" edge="1" parent="1" source="Fornecedor" target="Empresa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225.0" y="2461" />
+              <mxPoint x="225.0" y="2461" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Movimentacao" value="&lt;i&gt;«abstract»&lt;/i&gt;&lt;br&gt;Movimentacao" style="swimlane;html=1;fontStyle=3;align=center;startSize=40;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2068" width="360" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="Movimentacao_a" value="- id: int&lt;br&gt;- data: LocalDate&lt;br&gt;- empresa: Empresa&lt;br&gt;- itens: List&amp;lt;ItemMovimentacao&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Movimentacao">
+          <mxGeometry x="0" y="40" width="360" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Movimentacao_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Movimentacao">
+          <mxGeometry x="0" y="112" width="360" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Movimentacao_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getData(): LocalDate&lt;br&gt;+ setData(data: LocalDate): void&lt;br&gt;+ getEmpresa(): Empresa&lt;br&gt;+ setEmpresa(empresa: Empresa): void&lt;br&gt;+ getItens(): List&amp;lt;ItemMovimentacao&amp;gt;&lt;br&gt;+ setItens(itens: List&amp;lt;ItemMovimentacao&amp;gt;): void&lt;br&gt;+ adicionarItem(item: ItemMovimentacao): void&lt;br&gt;+ removerItem(item: ItemMovimentacao): void&lt;br&gt;+ calcularTotal(): double&lt;br&gt;&lt;i&gt;+ aplicarNoEstoque(): void {abstract}&lt;/i&gt;&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Movimentacao">
+          <mxGeometry x="0" y="118" width="360" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="Compra" value="Compra" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2508" width="270" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="Compra_a" value="- fornecedor: Fornecedor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Compra">
+          <mxGeometry x="0" y="28" width="270" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Compra_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Compra">
+          <mxGeometry x="0" y="55" width="270" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Compra_m" value="+ getFornecedor(): Fornecedor&lt;br&gt;+ setFornecedor(fornecedor: Fornecedor): void&lt;br&gt;+ aplicarNoEstoque(): void&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Compra">
+          <mxGeometry x="0" y="61" width="270" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Venda" value="Venda" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="800" y="2508" width="230" height="101" as="geometry" />
+        </mxCell>
+        <mxCell id="Venda_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
+          <mxGeometry x="0" y="28" width="230" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Venda_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Venda">
+          <mxGeometry x="0" y="38" width="230" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Venda_m" value="+ validarSaldo(): void&lt;br&gt;+ aplicarNoEstoque(): void&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
+          <mxGeometry x="0" y="44" width="230" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Se35" value="" edge="1" parent="1" source="Compra" target="Movimentacao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645.0" y="2428" />
+              <mxPoint x="770.0" y="2428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se36" value="" edge="1" parent="1" source="Venda" target="Movimentacao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="915.0" y="2428" />
+              <mxPoint x="770.0" y="2428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ItemMovimentacao" value="ItemMovimentacao" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2068" width="290" height="223" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacao_a" value="- produto: Produto&lt;br&gt;- quantidade: double&lt;br&gt;- precoUnitario: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ItemMovimentacao">
+          <mxGeometry x="0" y="28" width="290" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacao_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="ItemMovimentacao">
+          <mxGeometry x="0" y="85" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="ItemMovimentacao_m" value="+ getProduto(): Produto&lt;br&gt;+ setProduto(produto: Produto): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getPrecoUnitario(): double&lt;br&gt;+ setPrecoUnitario(precoUnitario: double): void&lt;br&gt;+ getSubtotal(): double&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="ItemMovimentacao">
+          <mxGeometry x="0" y="91" width="290" height="132" as="geometry" />
+        </mxCell>
+        <mxCell id="Produto" value="&lt;i&gt;«abstract»&lt;/i&gt;&lt;br&gt;Produto" style="swimlane;html=1;fontStyle=3;align=center;startSize=40;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="2068" width="340" height="685" as="geometry" />
+        </mxCell>
+        <mxCell id="Produto_a" value="- codigo: String&lt;br&gt;- nome: String&lt;br&gt;- descricao: String&lt;br&gt;- categoria: String&lt;br&gt;- empresa: Empresa&lt;br&gt;- precoCusto: double&lt;br&gt;- preco: double&lt;br&gt;- precoAtacado: double&lt;br&gt;- qtdMinAtacado: double&lt;br&gt;- estoqueMinimo: double&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Produto">
+          <mxGeometry x="0" y="40" width="340" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="Produto_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Produto">
+          <mxGeometry x="0" y="217" width="340" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Produto_m" value="+ getCodigo(): String&lt;br&gt;+ setCodigo(codigo: String): void&lt;br&gt;+ getNome(): String&lt;br&gt;+ setNome(nome: String): void&lt;br&gt;+ getDescricao(): String&lt;br&gt;+ setDescricao(descricao: String): void&lt;br&gt;+ getCategoria(): String&lt;br&gt;+ setCategoria(categoria: String): void&lt;br&gt;+ getEmpresa(): Empresa&lt;br&gt;+ setEmpresa(empresa: Empresa): void&lt;br&gt;+ getPrecoCusto(): double&lt;br&gt;+ setPrecoCusto(precoCusto: double): void&lt;br&gt;+ getPreco(): double&lt;br&gt;+ setPreco(preco: double): void&lt;br&gt;+ getPrecoAtacado(): double&lt;br&gt;+ setPrecoAtacado(precoAtacado: double): void&lt;br&gt;+ getQtdMinAtacado(): double&lt;br&gt;+ setQtdMinAtacado(qtdMinAtacado: double): void&lt;br&gt;+ getEstoqueMinimo(): double&lt;br&gt;+ setEstoqueMinimo(estoqueMinimo: double): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void&lt;br&gt;&lt;i&gt;+ getQuantidade(): double {abstract}&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ setQuantidade(quantidade: double): void {abstract}&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ getUnidadeMedida(): String {abstract}&lt;/i&gt;&lt;br&gt;+ entrada(qtd: double): void&lt;br&gt;+ saida(qtd: double): void&lt;br&gt;+ precoPara(qtd: double): double&lt;br&gt;+ isAbaixoDoMinimo(): boolean&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Produto">
+          <mxGeometry x="0" y="223" width="340" height="462" as="geometry" />
+        </mxCell>
+        <mxCell id="Unidade" value="Unidade" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="2823" width="290" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="Unidade_a" value="- qtdUnidade: int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Unidade">
+          <mxGeometry x="0" y="28" width="290" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Unidade_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Unidade">
+          <mxGeometry x="0" y="55" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Unidade_m" value="+ getQtdUnidade(): int&lt;br&gt;+ setQtdUnidade(qtdUnidade: int): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getUnidadeMedida(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Unidade">
+          <mxGeometry x="0" y="61" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Litros" value="Litros" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="2823" width="290" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="Litros_a" value="- qtdLitros: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Litros">
+          <mxGeometry x="0" y="28" width="290" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Litros_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Litros">
+          <mxGeometry x="0" y="55" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Litros_m" value="+ getQtdLitros(): double&lt;br&gt;+ setQtdLitros(qtdLitros: double): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getUnidadeMedida(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Litros">
+          <mxGeometry x="0" y="61" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Quilogramas" value="Quilogramas" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="2823" width="290" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="Quilogramas_a" value="- qtdQuilogramas: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Quilogramas">
+          <mxGeometry x="0" y="28" width="290" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Quilogramas_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Quilogramas">
+          <mxGeometry x="0" y="55" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Quilogramas_m" value="+ getQtdQuilogramas(): double&lt;br&gt;+ setQtdQuilogramas(qtdQuilogramas: double): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getUnidadeMedida(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Quilogramas">
+          <mxGeometry x="0" y="61" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Metros" value="Metros" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#fff2cc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1940" y="2823" width="290" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="Metros_a" value="- qtdMetros: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Metros">
+          <mxGeometry x="0" y="28" width="290" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="Metros_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Metros">
+          <mxGeometry x="0" y="55" width="290" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Metros_m" value="+ getQtdMetros(): double&lt;br&gt;+ setQtdMetros(qtdMetros: double): void&lt;br&gt;+ getQuantidade(): double&lt;br&gt;+ setQuantidade(quantidade: double): void&lt;br&gt;+ getUnidadeMedida(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Metros">
+          <mxGeometry x="0" y="61" width="290" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="Se37" value="" edge="1" parent="1" source="Unidade" target="Produto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1155.0" y="2788" />
+              <mxPoint x="1620.0" y="2788" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se38" value="" edge="1" parent="1" source="Litros" target="Produto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1465.0" y="2788" />
+              <mxPoint x="1620.0" y="2788" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se39" value="" edge="1" parent="1" source="Quilogramas" target="Produto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1775.0" y="2788" />
+              <mxPoint x="1620.0" y="2788" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se40" value="" edge="1" parent="1" source="Metros" target="Produto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2085.0" y="2788" />
+              <mxPoint x="1620.0" y="2788" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se41" value="" edge="1" parent="1" source="Movimentacao" target="ItemMovimentacao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;startArrow=diamondThin;startFill=1;startSize=16;endArrow=none;exitX=1;exitY=0.3076923076923077;entryX=0;entryY=0.4484304932735426;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se41l0" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se41">
+          <mxGeometry x="-0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se41l1" value="1..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se41">
+          <mxGeometry x="0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se42" value="" edge="1" parent="1" source="ItemMovimentacao" target="Produto" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=1;exitY=0.4484304932735426;entryX=0;entryY=0.145985401459854;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se42l0" value="0..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se42">
+          <mxGeometry x="-0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se42l1" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se42">
+          <mxGeometry x="0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se43" value="" edge="1" parent="1" source="Compra" target="Fornecedor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0;exitY=0.3383458646616541;entryX=1;entryY=0.5232558139534884;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se43l0" value="0..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se43">
+          <mxGeometry x="-0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se43l1" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se43">
+          <mxGeometry x="0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se44" value="" edge="1" parent="1" source="Movimentacao" target="Empresa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0;exitY=0.3076923076923077;entryX=1;entryY=0.27932960893854747;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se44l0" value="0..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se44">
+          <mxGeometry x="-0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se44l1" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se44">
+          <mxGeometry x="0.6" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se45" value="" edge="1" parent="1" source="Produto" target="Empresa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620.0" y="2023" />
+              <mxPoint x="225.0" y="2023" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Se45l0" value="0..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se45">
+          <mxGeometry x="-0.88" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se45l1" value="1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Se45">
+          <mxGeometry x="0.88" y="0" relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nota" value="&lt;b&gt;Exceções&lt;/b&gt;&lt;br&gt;Setters com validação usam util.Validador e lançam DadoInvalidoException (RN03, RN04, RN06).&lt;br&gt;Produto.saida() e Venda.validarSaldo() lançam EstoqueInsuficienteException (RN01).&lt;br&gt;precoPara() aplica o preço de atacado (RN07)." style="shape=note;size=12;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="2808" width="540" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Periodo" value="&lt;i&gt;«enumeration»&lt;/i&gt;&lt;br&gt;Periodo" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#ffffff;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="720" y="2788" width="180" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="Periodo_a" value="SEMANA&lt;br&gt;TRIMESTRE&lt;br&gt;ANO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Periodo">
+          <mxGeometry x="0" y="40" width="180" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="Periodo_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Periodo">
+          <mxGeometry x="0" y="97" width="180" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Periodo_m" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Periodo">
+          <mxGeometry x="0" y="103" width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Validador" value="&lt;i&gt;«utility»&lt;/i&gt;&lt;br&gt;Validador" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f5f5f5;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2580" y="965" width="380" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="Validador_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Validador">
+          <mxGeometry x="0" y="40" width="380" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Validador_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Validador">
+          <mxGeometry x="0" y="50" width="380" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Validador_m" value="&lt;u&gt;+ validarCnpj(cnpj: String): boolean&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ validarEmail(email: String): boolean&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ validarTelefone(telefone: String): boolean&lt;/u&gt;&lt;br&gt;&lt;u&gt;- somenteDigitos(valor: String): String&lt;/u&gt;&lt;br&gt;- Validador()" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Validador">
+          <mxGeometry x="0" y="56" width="380" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="nota_util" value="&lt;b&gt;Regras de validação&lt;/b&gt;&lt;br&gt;CNPJ: 14 dígitos, não todos iguais, dígitos verificadores corretos (RN03).&lt;br&gt;E-mail: contém &quot;@&quot;.&lt;br&gt;Telefone: 10 ou 11 dígitos (DDD + número), ignorando ( ) - e espaços." style="shape=note;size=12;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=6;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2985" y="965" width="270" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="Se46" value="" style="endArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1" source="nota_util" target="Validador">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Se47" value="«use»" edge="1" parent="1" source="pkg_model" target="pkg_util" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=1;exitY=0.05;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;labelBackgroundColor=#ffffff;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2915" y="2002" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
