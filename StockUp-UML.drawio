@@ -38,16 +38,16 @@
           <mxGeometry x="0" y="163.0" width="300" height="117" as="geometry" />
         </mxCell>
         <mxCell id="TelaEmpresas" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaEmpresas" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="70" y="480.0" width="340" height="445" as="geometry" />
+          <mxGeometry x="70" y="480.0" width="340" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="TelaEmpresas_a" value="- controller: EmpresaController&lt;br&gt;- jButton_Buscar: JButton&lt;br&gt;- jButton_Editar: JButton&lt;br&gt;- jButton_Excluir: JButton&lt;br&gt;- jButton_Limpar: JButton&lt;br&gt;- jButton_Salvar: JButton&lt;br&gt;- jComboBox_Tipo: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jTable_Empresas: JTable&lt;br&gt;- jTextField_Busca: JTextField&lt;br&gt;- jTextField_Cnpj: JTextField&lt;br&gt;- jTextField_Email: JTextField&lt;br&gt;- jTextField_RazaoSocial: JTextField&lt;br&gt;- jTextField_Telefone: JTextField" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaEmpresas">
-          <mxGeometry x="0" y="40" width="340" height="207" as="geometry" />
+        <mxCell id="TelaEmpresas_a" value="- controller: EmpresaController&lt;br&gt;- jButton_Buscar: JButton&lt;br&gt;- jButton_Editar: JButton&lt;br&gt;- jButton_Excluir: JButton&lt;br&gt;- jButton_Limpar: JButton&lt;br&gt;- jButton_Salvar: JButton&lt;br&gt;- jTable_Empresas: JTable&lt;br&gt;- jTextField_Busca: JTextField&lt;br&gt;- jTextField_Cnpj: JTextField&lt;br&gt;- jTextField_Email: JTextField&lt;br&gt;- jTextField_RazaoSocial: JTextField&lt;br&gt;- jTextField_Telefone: JTextField" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaEmpresas">
+          <mxGeometry x="0" y="40" width="340" height="192" as="geometry" />
         </mxCell>
         <mxCell id="TelaEmpresas_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaEmpresas">
-          <mxGeometry x="0" y="247.0" width="340" height="6" as="geometry" />
+          <mxGeometry x="0" y="232.0" width="340" height="6" as="geometry" />
         </mxCell>
         <mxCell id="TelaEmpresas_m" value="+ getController(): EmpresaController&lt;br&gt;+ setController(controller: EmpresaController): void&lt;br&gt;+ salvarEmpresa(): void&lt;br&gt;+ editarEmpresa(): void&lt;br&gt;+ excluirEmpresa(): void&lt;br&gt;+ buscarEmpresa(): void&lt;br&gt;+ atualizarTabela(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void&lt;br&gt;- carregarEmpresa(linha: int): void&lt;br&gt;- montarDTO(): EmpresaDTO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaEmpresas">
-          <mxGeometry x="0" y="253.0" width="340" height="192" as="geometry" />
+          <mxGeometry x="0" y="238.0" width="340" height="192" as="geometry" />
         </mxCell>
         <mxCell id="TelaProdutos" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaProdutos" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="460" y="480.0" width="340" height="655" as="geometry" />
@@ -74,16 +74,16 @@
           <mxGeometry x="0" y="238.0" width="325" height="162" as="geometry" />
         </mxCell>
         <mxCell id="TelaVenda" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaVenda" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1180" y="480.0" width="325" height="460" as="geometry" />
+          <mxGeometry x="1180" y="480.0" width="325" height="445" as="geometry" />
         </mxCell>
-        <mxCell id="TelaVenda_a" value="- controller: MovimentacaoController&lt;br&gt;- jButton_Adicionar: JButton&lt;br&gt;- jButton_AlterarQtd: JButton&lt;br&gt;- jButton_Cancelar: JButton&lt;br&gt;- jButton_Confirmar: JButton&lt;br&gt;- jButton_Remover: JButton&lt;br&gt;- jComboBox_Cliente: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jComboBox_Empresa: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jComboBox_Produto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jLabel_Total: JLabel&lt;br&gt;- jTable_Itens: JTable&lt;br&gt;- jTextField_Quantidade: JTextField" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaVenda">
-          <mxGeometry x="0" y="40" width="325" height="192" as="geometry" />
+        <mxCell id="TelaVenda_a" value="- controller: MovimentacaoController&lt;br&gt;- jButton_Adicionar: JButton&lt;br&gt;- jButton_AlterarQtd: JButton&lt;br&gt;- jButton_Cancelar: JButton&lt;br&gt;- jButton_Confirmar: JButton&lt;br&gt;- jButton_Remover: JButton&lt;br&gt;- jComboBox_Empresa: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jComboBox_Produto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jLabel_Total: JLabel&lt;br&gt;- jTable_Itens: JTable&lt;br&gt;- jTextField_Quantidade: JTextField" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaVenda">
+          <mxGeometry x="0" y="40" width="325" height="177" as="geometry" />
         </mxCell>
         <mxCell id="TelaVenda_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaVenda">
-          <mxGeometry x="0" y="232.0" width="325" height="6" as="geometry" />
+          <mxGeometry x="0" y="217.0" width="325" height="6" as="geometry" />
         </mxCell>
         <mxCell id="TelaVenda_m" value="+ getController(): MovimentacaoController&lt;br&gt;+ setController(controller: MovimentacaoController): void&lt;br&gt;+ adicionarItem(): void&lt;br&gt;+ alterarQuantidade(): void&lt;br&gt;+ removerItem(): void&lt;br&gt;+ atualizarTotal(): void&lt;br&gt;+ confirmarVenda(): void&lt;br&gt;+ cancelarVenda(): void&lt;br&gt;+ validarCampos(): boolean&lt;br&gt;+ limparCampos(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void&lt;br&gt;- colocarItem(codigo: String, quantidade: double,&lt;br&gt;&amp;nbsp; &amp;nbsp; linha: int): void&lt;br&gt;- formatar(valor: double): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaVenda">
-          <mxGeometry x="0" y="238.0" width="325" height="222" as="geometry" />
+          <mxGeometry x="0" y="223.0" width="325" height="222" as="geometry" />
         </mxCell>
         <mxCell id="TelaMetricas" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaMetricas" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1625" y="480.0" width="320" height="325" as="geometry" />
@@ -162,7 +162,7 @@
           <mxGeometry x="0" y="103.0" width="370" height="252" as="geometry" />
         </mxCell>
         <mxCell id="MovimentacaoController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;MovimentacaoController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="840" y="1375.0" width="640" height="385" as="geometry" />
+          <mxGeometry x="840" y="1375.0" width="640" height="370" as="geometry" />
         </mxCell>
         <mxCell id="MovimentacaoController_a" value="- compraDAO: CompraDAO&lt;br&gt;- vendaDAO: VendaDAO&lt;br&gt;- produtoDAO: ProdutoDAO&lt;br&gt;- empresaDAO: EmpresaDAO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoController">
           <mxGeometry x="0" y="40" width="640" height="72" as="geometry" />
@@ -170,8 +170,8 @@
         <mxCell id="MovimentacaoController_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MovimentacaoController">
           <mxGeometry x="0" y="112.0" width="640" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="MovimentacaoController_m" value="+ getCompraDAO(): CompraDAO&lt;br&gt;+ setCompraDAO(compraDAO: CompraDAO): void&lt;br&gt;+ getVendaDAO(): VendaDAO&lt;br&gt;+ setVendaDAO(vendaDAO: VendaDAO): void&lt;br&gt;+ getProdutoDAO(): ProdutoDAO&lt;br&gt;+ setProdutoDAO(produtoDAO: ProdutoDAO): void&lt;br&gt;+ getEmpresaDAO(): EmpresaDAO&lt;br&gt;+ setEmpresaDAO(empresaDAO: EmpresaDAO): void&lt;br&gt;+ registrarCompra(dto: MovimentacaoDTO): void&lt;br&gt;+ registrarVenda(dto: MovimentacaoDTO): void&lt;br&gt;+ listarVendas(inicio: LocalDate, fim: LocalDate, cnpjCliente: String,&lt;br&gt;&amp;nbsp; &amp;nbsp; codigoProduto: String): List&amp;lt;MovimentacaoDTO&amp;gt;&lt;br&gt;+ temMovimentacao(empresa: Empresa): boolean&lt;br&gt;+ temMovimentacao(produto: Produto): boolean&lt;br&gt;- paraDTO(movimentacao: Movimentacao): MovimentacaoDTO&lt;br&gt;- paraCompra(dto: MovimentacaoDTO): Compra&lt;br&gt;- paraVenda(dto: MovimentacaoDTO): Venda" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoController">
-          <mxGeometry x="0" y="118.0" width="640" height="267" as="geometry" />
+        <mxCell id="MovimentacaoController_m" value="+ getCompraDAO(): CompraDAO&lt;br&gt;+ setCompraDAO(compraDAO: CompraDAO): void&lt;br&gt;+ getVendaDAO(): VendaDAO&lt;br&gt;+ setVendaDAO(vendaDAO: VendaDAO): void&lt;br&gt;+ getProdutoDAO(): ProdutoDAO&lt;br&gt;+ setProdutoDAO(produtoDAO: ProdutoDAO): void&lt;br&gt;+ getEmpresaDAO(): EmpresaDAO&lt;br&gt;+ setEmpresaDAO(empresaDAO: EmpresaDAO): void&lt;br&gt;+ registrarCompra(dto: MovimentacaoDTO): void&lt;br&gt;+ registrarVenda(dto: MovimentacaoDTO): void&lt;br&gt;+ listarVendas(inicio: LocalDate, fim: LocalDate, codigoProduto: String): List&amp;lt;MovimentacaoDTO&amp;gt;&lt;br&gt;+ temMovimentacao(empresa: Empresa): boolean&lt;br&gt;+ temMovimentacao(produto: Produto): boolean&lt;br&gt;- paraDTO(movimentacao: Movimentacao): MovimentacaoDTO&lt;br&gt;- paraCompra(dto: MovimentacaoDTO): Compra&lt;br&gt;- paraVenda(dto: MovimentacaoDTO): Venda" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoController">
+          <mxGeometry x="0" y="118.0" width="640" height="252" as="geometry" />
         </mxCell>
         <mxCell id="MetricasController" value="&lt;i&gt;«controller»&lt;/i&gt;&lt;br&gt;MetricasController" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1540" y="1375.0" width="490" height="475" as="geometry" />
@@ -407,28 +407,28 @@
           <mxGeometry x="0" y="268.0" width="330" height="432" as="geometry" />
         </mxCell>
         <mxCell id="EmpresaDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;EmpresaDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="2505" y="60" width="330" height="385" as="geometry" />
+          <mxGeometry x="2505" y="60" width="330" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="EmpresaDTO_a" value="- id: int&lt;br&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;br&gt;- tipo: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
-          <mxGeometry x="0" y="40" width="330" height="117" as="geometry" />
+        <mxCell id="EmpresaDTO_a" value="- id: int&lt;br&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
+          <mxGeometry x="0" y="40" width="330" height="102" as="geometry" />
         </mxCell>
         <mxCell id="EmpresaDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="EmpresaDTO">
-          <mxGeometry x="0" y="157.0" width="330" height="6" as="geometry" />
+          <mxGeometry x="0" y="142.0" width="330" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="EmpresaDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ setTipo(tipo: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
-          <mxGeometry x="0" y="163.0" width="330" height="222" as="geometry" />
+        <mxCell id="EmpresaDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="EmpresaDTO">
+          <mxGeometry x="0" y="148.0" width="330" height="192" as="geometry" />
         </mxCell>
         <mxCell id="MovimentacaoDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;MovimentacaoDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="2505" y="605.0" width="330" height="385" as="geometry" />
+          <mxGeometry x="2505" y="605.0" width="330" height="295" as="geometry" />
         </mxCell>
-        <mxCell id="MovimentacaoDTO_a" value="- id: int&lt;br&gt;- data: LocalDate&lt;br&gt;- cnpjEmpresa: String&lt;br&gt;- cnpjCliente: String&lt;br&gt;- nomeCliente: String&lt;br&gt;- itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;- total: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
-          <mxGeometry x="0" y="40" width="330" height="117" as="geometry" />
+        <mxCell id="MovimentacaoDTO_a" value="- id: int&lt;br&gt;- data: LocalDate&lt;br&gt;- cnpjEmpresa: String&lt;br&gt;- itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;- total: double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
+          <mxGeometry x="0" y="40" width="330" height="87" as="geometry" />
         </mxCell>
         <mxCell id="MovimentacaoDTO_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="MovimentacaoDTO">
-          <mxGeometry x="0" y="157.0" width="330" height="6" as="geometry" />
+          <mxGeometry x="0" y="127.0" width="330" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="MovimentacaoDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getData(): LocalDate&lt;br&gt;+ setData(data: LocalDate): void&lt;br&gt;+ getCnpjEmpresa(): String&lt;br&gt;+ setCnpjEmpresa(cnpjEmpresa: String): void&lt;br&gt;+ getItens(): List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;+ setItens(itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;): void&lt;br&gt;+ getTotal(): double&lt;br&gt;+ setTotal(total: double): void&lt;br&gt;+ getCnpjCliente(): String&lt;br&gt;+ setCnpjCliente(cnpjCliente: String): void&lt;br&gt;+ getNomeCliente(): String&lt;br&gt;+ setNomeCliente(nomeCliente: String): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
-          <mxGeometry x="0" y="163.0" width="330" height="222" as="geometry" />
+        <mxCell id="MovimentacaoDTO_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getData(): LocalDate&lt;br&gt;+ setData(data: LocalDate): void&lt;br&gt;+ getCnpjEmpresa(): String&lt;br&gt;+ setCnpjEmpresa(cnpjEmpresa: String): void&lt;br&gt;+ getItens(): List&amp;lt;ItemMovimentacaoDTO&amp;gt;&lt;br&gt;+ setItens(itens: List&amp;lt;ItemMovimentacaoDTO&amp;gt;): void&lt;br&gt;+ getTotal(): double&lt;br&gt;+ setTotal(total: double): void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="MovimentacaoDTO">
+          <mxGeometry x="0" y="133.0" width="330" height="162" as="geometry" />
         </mxCell>
         <mxCell id="MetricasDTO" value="&lt;i&gt;«dto»&lt;/i&gt;&lt;br&gt;MetricasDTO" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#e1d5e7;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="2925" y="60" width="330" height="520" as="geometry" />
@@ -492,7 +492,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Empresa" value="Empresa" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="80" y="2628.0" width="290" height="358" as="geometry" />
+          <mxGeometry x="80" y="2628.0" width="290" height="343" as="geometry" />
         </mxCell>
         <mxCell id="Empresa_a" value="- id: int&lt;br&gt;- cnpj: String&lt;br&gt;- razaoSocial: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- ativo: boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Empresa">
           <mxGeometry x="0" y="28" width="290" height="102" as="geometry" />
@@ -500,8 +500,8 @@
         <mxCell id="Empresa_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Empresa">
           <mxGeometry x="0" y="130.0" width="290" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="Empresa_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void&lt;br&gt;+ getTipo(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Empresa">
-          <mxGeometry x="0" y="136.0" width="290" height="222" as="geometry" />
+        <mxCell id="Empresa_m" value="+ getId(): int&lt;br&gt;+ setId(id: int): void&lt;br&gt;+ getCnpj(): String&lt;br&gt;+ setCnpj(cnpj: String): void&lt;br&gt;+ getRazaoSocial(): String&lt;br&gt;+ setRazaoSocial(razaoSocial: String): void&lt;br&gt;+ getTelefone(): String&lt;br&gt;+ setTelefone(telefone: String): void&lt;br&gt;+ getEmail(): String&lt;br&gt;+ setEmail(email: String): void&lt;br&gt;+ isAtivo(): boolean&lt;br&gt;+ setAtivo(ativo: boolean): void&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Empresa">
+          <mxGeometry x="0" y="136.0" width="290" height="207" as="geometry" />
         </mxCell>
         <mxCell id="Movimentacao" value="&lt;i&gt;«abstract»&lt;/i&gt;&lt;br&gt;Movimentacao" style="swimlane;html=1;fontStyle=3;align=center;startSize=40;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="590" y="2628.0" width="360" height="325" as="geometry" />
@@ -528,16 +528,16 @@
           <mxGeometry x="0" y="44.0" width="270" height="42" as="geometry" />
         </mxCell>
         <mxCell id="Venda" value="Venda" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#d5e8d4;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="800" y="3068.0" width="230" height="163" as="geometry" />
+          <mxGeometry x="800" y="3068.0" width="230" height="101" as="geometry" />
         </mxCell>
-        <mxCell id="Venda_a" value="- cliente: Cliente" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
-          <mxGeometry x="0" y="28" width="230" height="27" as="geometry" />
+        <mxCell id="Venda_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
+          <mxGeometry x="0" y="28" width="230" height="10" as="geometry" />
         </mxCell>
         <mxCell id="Venda_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Venda">
-          <mxGeometry x="0" y="55.0" width="230" height="6" as="geometry" />
+          <mxGeometry x="0" y="38.0" width="230" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="Venda_m" value="+ getCliente(): Cliente&lt;br&gt;+ setCliente(cliente: Cliente): void&lt;br&gt;+ getNomeCliente(): String&lt;br&gt;+ validarSaldo(): void&lt;br&gt;+ aplicarNoEstoque(): void&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
-          <mxGeometry x="0" y="61.0" width="230" height="102" as="geometry" />
+        <mxCell id="Venda_m" value="+ validarSaldo(): void&lt;br&gt;+ aplicarNoEstoque(): void&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Venda">
+          <mxGeometry x="0" y="44.0" width="230" height="57" as="geometry" />
         </mxCell>
         <mxCell id="Se35" value="" edge="1" parent="1" source="Compra" target="Movimentacao" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
           <mxGeometry relative="1" as="geometry">
@@ -743,7 +743,7 @@
         <mxCell id="TelaHistorico" value="&lt;i&gt;«view»&lt;/i&gt;&lt;br&gt;TelaHistorico" style="swimlane;html=1;fontStyle=1;align=center;startSize=40;collapsible=0;fillColor=#f8cecc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="70" y="40" width="320" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="TelaHistorico_a" value="- controller: MovimentacaoController&lt;br&gt;- vendas: List&amp;lt;MovimentacaoDTO&amp;gt;&lt;br&gt;- jButton_Filtrar: JButton&lt;br&gt;- jButton_LimparFiltros: JButton&lt;br&gt;- jComboBox_Cliente: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jComboBox_Produto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jLabel_Detalhes: JLabel&lt;br&gt;- jLabel_Resumo: JLabel&lt;br&gt;- jTable_Detalhes: JTable&lt;br&gt;- jTable_Vendas: JTable&lt;br&gt;- jTextField_DataFim: JTextField&lt;br&gt;- jTextField_DataInicio: JTextField" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaHistorico">
+        <mxCell id="TelaHistorico_a" value="- controller: MovimentacaoController&lt;br&gt;- vendas: List&amp;lt;MovimentacaoDTO&amp;gt;&lt;br&gt;- jButton_Filtrar: JButton&lt;br&gt;- jButton_LimparFiltros: JButton&lt;br&gt;- jComboBox_Produto: JComboBox&amp;lt;String&amp;gt;&lt;br&gt;- jLabel_Detalhes: JLabel&lt;br&gt;- jLabel_Resumo: JLabel&lt;br&gt;- jTable_Detalhes: JTable&lt;br&gt;- jTable_Vendas: JTable&lt;br&gt;- jTextField_DataFim: JTextField&lt;br&gt;- jTextField_DataInicio: JTextField&lt;br&gt;- nomesEmpresas: Map&amp;lt;String, String&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaHistorico">
           <mxGeometry x="0" y="40" width="320" height="192" as="geometry" />
         </mxCell>
         <mxCell id="TelaHistorico_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="TelaHistorico">
@@ -751,18 +751,6 @@
         </mxCell>
         <mxCell id="TelaHistorico_m" value="+ getController(): MovimentacaoController&lt;br&gt;+ setController(controller: MovimentacaoController): void&lt;br&gt;+ filtrarHistorico(): void&lt;br&gt;+ limparFiltros(): void&lt;br&gt;+ mostrarDetalhes(): void&lt;br&gt;+ atualizarResumo(): void&lt;br&gt;+ mostrarMensagem(mensagem: String): void&lt;br&gt;- formatar(valor: double): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="TelaHistorico">
           <mxGeometry x="0" y="238.0" width="320" height="132" as="geometry" />
-        </mxCell>
-        <mxCell id="Cliente" value="Cliente" style="swimlane;html=1;fontStyle=1;align=center;startSize=28;collapsible=0;fillColor=#dae8fc;swimlaneFillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="125" y="3068.0" width="200" height="86" as="geometry" />
-        </mxCell>
-        <mxCell id="Cliente_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Cliente">
-          <mxGeometry x="0" y="28" width="200" height="10" as="geometry" />
-        </mxCell>
-        <mxCell id="Cliente_l" value="" style="line;strokeWidth=1;fillColor=none;strokeColor=#000000;" vertex="1" parent="Cliente">
-          <mxGeometry x="0" y="38.0" width="200" height="6" as="geometry" />
-        </mxCell>
-        <mxCell id="Cliente_m" value="+ getTipo(): String&lt;br&gt;+ toString(): String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingTop=2;whiteSpace=nowrap;fontSize=12;fontColor=#000000;" vertex="1" parent="Cliente">
-          <mxGeometry x="0" y="44.0" width="200" height="42" as="geometry" />
         </mxCell>
         <mxCell id="Snv1" value="" edge="1" parent="1" source="TelaPrincipal" target="TelaHistorico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;dashed=1;exitX=0;exitY=0.5;entryX=1;entryY=0.3;exitPerimeter=0;entryPerimeter=0;">
           <mxGeometry relative="1" as="geometry">
@@ -776,23 +764,6 @@
               <mxPoint x="1000" y="1350.0" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Snv3" value="" edge="1" parent="1" source="Cliente" target="Empresa" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=block;endFill=0;endSize=14;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Snv4" value="" edge="1" parent="1" source="Venda" target="Cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;fontColor=#000000;endArrow=open;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="915" y="3280.0" />
-              <mxPoint x="225" y="3280.0" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Snv4l0" value="0..*" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Snv4">
-          <mxGeometry x="-0.8" y="0" relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Snv4l1" value="0..1" style="edgeLabel;html=1;verticalAlign=middle;labelBackgroundColor=#ffffff;align=center;fontColor=#000000;" vertex="1" connectable="0" parent="Snv4">
-          <mxGeometry x="0.8" y="0" relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
