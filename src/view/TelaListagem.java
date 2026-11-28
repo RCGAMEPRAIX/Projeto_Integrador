@@ -165,15 +165,15 @@ public class TelaListagem extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_FiltrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_FiltrarActionPerformed
-        filtrarHistorico();
+        
     }//GEN-LAST:event_jButton_FiltrarActionPerformed
 
     private void jButton_LimparFiltrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimparFiltrosActionPerformed
-        limparFiltros();
+        
     }//GEN-LAST:event_jButton_LimparFiltrosActionPerformed
 
     private void jTable_VendasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_VendasMouseClicked
-        mostrarDetalhes();
+       
     }//GEN-LAST:event_jTable_VendasMouseClicked
 
     /**

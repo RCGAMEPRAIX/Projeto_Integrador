@@ -60,7 +60,7 @@ public class TelaMetricas extends javax.swing.JFrame {
 
         jLabel_DataFim.setText("até:");
 
-        jComboBox_Periodo.setModel(new javax.swing.DefaultComboBoxModel<>(Periodo.values()));
+        jComboBox_Periodo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Semana", "Trimestre", "Ano" }));
 
         jLabel_Data.setText("Data de referência:");
 
@@ -199,7 +199,7 @@ public class TelaMetricas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CalcularActionPerformed
-        calcularMetricas();
+        
     }//GEN-LAST:event_jButton_CalcularActionPerformed
 
     /**
@@ -229,7 +229,7 @@ public class TelaMetricas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Calcular;
-    private javax.swing.JComboBox<Periodo> jComboBox_Periodo;
+    private javax.swing.JComboBox<String> jComboBox_Periodo;
     private javax.swing.JLabel jLabel_Data;
     private javax.swing.JLabel jLabel_DataFim;
     private javax.swing.JLabel jLabel_Dica;

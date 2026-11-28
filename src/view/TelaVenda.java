@@ -199,43 +199,27 @@ public class TelaVenda extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_RemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_RemoverActionPerformed
-        removerItem();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_RemoverActionPerformed
 
     private void jComboBox_EmpresaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox_EmpresaActionPerformed
-        // Trocou a empresa: mostra só os produtos ativos dela e limpa os itens
-        jComboBox_Produto.removeAllItems();
-        limparCampos();
-        if (jComboBox_Empresa.getSelectedItem() == null) {
-            return;
-        }
-        String cnpj = ((String) jComboBox_Empresa.getSelectedItem()).split(" - ")[0];
-        try {
-            for (ProdutoDTO p : new ProdutoController().listar()) {
-                if (p.isAtivo() && p.getCnpjEmpresa().equals(cnpj)) {
-                    jComboBox_Produto.addItem(p.getCodigo() + " - " + p.getNome() + " (estoque "
-                        + formatar(p.getQuantidade()) + " " + p.getUnidadeMedida() + ")");
-                }
-            }
-        } catch (IOException e) {
-            mostrarMensagem("Erro ao ler os produtos: " + e.getMessage());
-        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox_EmpresaActionPerformed
 
     private void jButton_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CancelarActionPerformed
-        cancelarVenda();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_CancelarActionPerformed
 
     private void jButton_ConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ConfirmarActionPerformed
-        confirmarVenda();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_ConfirmarActionPerformed
 
     private void jButton_AdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AdicionarActionPerformed
-        adicionarItem();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_AdicionarActionPerformed
 
     private void jButton_AlterarQtdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_AlterarQtdActionPerformed
-        alterarQuantidade();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_AlterarQtdActionPerformed
 
     /**

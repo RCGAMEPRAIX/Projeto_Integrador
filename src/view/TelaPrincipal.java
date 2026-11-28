@@ -17,6 +17,48 @@ public class TelaPrincipal extends javax.swing.JFrame {
      */
     public TelaPrincipal() {
         initComponents();
+        jLabel_Empresa.setVisible(false);
+        jLabel_Reposicao.setVisible(false);
+    }
+
+    public void abrirTelaProdutos(){
+        TelaProdutos telaProdutos = new TelaProdutos();
+        telaProdutos.setVisible(true);
+        this.dispose();
+    }
+
+    public void abrirTelaVenda(){
+        TelaVenda telaVenda = new TelaVenda();
+        telaVenda.setVisible(true);
+        this.dispose();
+    }
+
+    public void abrirTelaHistorico(){
+        TelaHistorico telaHistorico = new TelaHistorico();
+        telaHistorico.setVisible(true);
+        this.dispose();
+    }
+
+    public void abrirTelaMetricas(){
+        TelaMetricas telaMetricas = new TelaMetricas();
+        telaMetricas.setVisible(true);
+        this.dispose();
+    }
+
+    public void atualizarReposicao(){
+        jLabel_Empresa.setVisible(true);
+        //Atualiza o jLabel_Empresa com a empresa logada
+    }
+
+    public void atualizarCabecalho(){
+        jLabel_Reposicao.setVisible(true);
+        //aviso de reposição (RF13)
+    }
+
+    public void sair(){
+        TelaLogin telaLogin = new TelaLogin();
+        telaLogin.setVisible(true);
+        this.dispose();
     }
 
     /**
@@ -31,9 +73,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel_Titulo = new javax.swing.JLabel();
         jLabel_Subtitulo = new javax.swing.JLabel();
-        jButton_Cadastro = new javax.swing.JButton();
-        jButton_Login = new javax.swing.JButton();
-        jButton_Listagem = new javax.swing.JButton();
+        jButton_Historico = new javax.swing.JButton();
+        jButton_Metricas = new javax.swing.JButton();
+        jButton_Produtos = new javax.swing.JButton();
+        jButton_Sair = new javax.swing.JButton();
+        jButton_Venda = new javax.swing.JButton();
+        jLabel_Empresa = new javax.swing.JLabel();
+        jLabel_Reposicao = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -43,44 +89,81 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel_Subtitulo.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
         jLabel_Subtitulo.setText("Controle de estoque, compras e vendas");
 
-        jButton_Cadastro.setText("Cadastro");
+        jButton_Historico.setText("Histórico");
+        jButton_Historico.addActionListener(this::jButton_HistoricoActionPerformed);
 
-        jButton_Login.setText("Login");
+        jButton_Metricas.setText("Metricas");
+        jButton_Metricas.addActionListener(this::jButton_MetricasActionPerformed);
 
-        jButton_Listagem.setText("Listagem");
+        jButton_Produtos.setText("Produtos");
+        jButton_Produtos.addActionListener(this::jButton_ProdutosActionPerformed);
+
+        jButton_Sair.setBackground(new java.awt.Color(255, 0, 0));
+        jButton_Sair.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jButton_Sair.setForeground(new java.awt.Color(255, 255, 255));
+        jButton_Sair.setText("Sair");
+        jButton_Sair.addActionListener(this::jButton_SairActionPerformed);
+
+        jButton_Venda.setText("Venda");
+        jButton_Venda.addActionListener(this::jButton_VendaActionPerformed);
+
+        jLabel_Empresa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel_Empresa.setForeground(new java.awt.Color(204, 255, 204));
+        jLabel_Empresa.setText("Empresa");
+
+        jLabel_Reposicao.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel_Reposicao.setForeground(new java.awt.Color(204, 255, 204));
+        jLabel_Reposicao.setText("Reposicao");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButton_Sair)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jButton_Listagem, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel_Subtitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton_Cadastro, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(52, 52, 52))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel_Empresa, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel_Titulo)
-                        .addGap(120, 120, 120))))
+                        .addGap(113, 113, 113))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel_Reposicao, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jButton_Produtos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton_Metricas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel_Subtitulo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton_Historico, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton_Venda, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(52, 52, 52))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel_Titulo)
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel_Titulo)
+                    .addComponent(jLabel_Empresa))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel_Subtitulo)
-                .addGap(28, 28, 28)
-                .addComponent(jButton_Cadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(jButton_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(jButton_Listagem, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton_Historico, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_Metricas, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_Produtos, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton_Venda, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel_Reposicao)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addComponent(jButton_Sair)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -96,6 +179,26 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SairActionPerformed
+        sair();
+    }//GEN-LAST:event_jButton_SairActionPerformed
+
+    private void jButton_ProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ProdutosActionPerformed
+        abrirTelaProdutos();
+    }//GEN-LAST:event_jButton_ProdutosActionPerformed
+
+    private void jButton_VendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_VendaActionPerformed
+        abrirTelaVenda();
+    }//GEN-LAST:event_jButton_VendaActionPerformed
+
+    private void jButton_HistoricoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_HistoricoActionPerformed
+        abrirTelaHistorico();
+    }//GEN-LAST:event_jButton_HistoricoActionPerformed
+
+    private void jButton_MetricasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MetricasActionPerformed
+        abrirTelaMetricas();
+    }//GEN-LAST:event_jButton_MetricasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,9 +226,13 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton_Cadastro;
-    private javax.swing.JButton jButton_Listagem;
-    private javax.swing.JButton jButton_Login;
+    private javax.swing.JButton jButton_Historico;
+    private javax.swing.JButton jButton_Metricas;
+    private javax.swing.JButton jButton_Produtos;
+    private javax.swing.JButton jButton_Sair;
+    private javax.swing.JButton jButton_Venda;
+    private javax.swing.JLabel jLabel_Empresa;
+    private javax.swing.JLabel jLabel_Reposicao;
     private javax.swing.JLabel jLabel_Subtitulo;
     private javax.swing.JLabel jLabel_Titulo;
     private javax.swing.JPanel jPanel1;

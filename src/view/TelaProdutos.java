@@ -347,63 +347,35 @@ public class TelaProdutos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCheckBox_InativosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox_InativosActionPerformed
-        atualizarTabela();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox_InativosActionPerformed
 
     private void jCheckBox_ReporActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox_ReporActionPerformed
-        atualizarTabela();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox_ReporActionPerformed
 
     private void jButton_SalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SalvarActionPerformed
-        salvarProduto();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_SalvarActionPerformed
 
     private void jButton_EditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_EditarActionPerformed
-        editarProduto();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_EditarActionPerformed
 
     private void jButton_ExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ExcluirActionPerformed
-        excluirProduto();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_ExcluirActionPerformed
 
     private void jButton_LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_LimparActionPerformed
-        limparCampos();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_LimparActionPerformed
 
     private void jTable_ProdutosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable_ProdutosMouseClicked
-        // Um clique carrega o produto nos campos; dois cliques consultam o estoque
-        int linha = jTable_Produtos.getSelectedRow();
-        if (linha == -1) {
-            return;
-        }
-        try {
-            ProdutoDTO dto = controller.buscar(String.valueOf(jTable_Produtos.getValueAt(linha, 0)));
-            jTextField_Codigo.setText(dto.getCodigo());
-            jTextField_Codigo.setEditable(false); // o código não muda na edição (RF05)
-            jTextField_Nome.setText(dto.getNome());
-            jTextField_Descricao.setText(dto.getDescricao());
-            jTextField_Categoria.setText(dto.getCategoria());
-            jTextField_PrecoCusto.setText(String.format("%.2f", dto.getPrecoCusto()));
-            jTextField_Preco.setText(String.format("%.2f", dto.getPreco()));
-            jTextField_PrecoAtacado.setText(dto.getPrecoAtacado() > 0 ? String.format("%.2f", dto.getPrecoAtacado()) : "");
-            jTextField_QtdMinAtacado.setText(dto.getQtdMinAtacado() > 0 ? formatar(dto.getQtdMinAtacado()) : "");
-            jTextField_EstoqueMinimo.setText(formatar(dto.getEstoqueMinimo()));
-            jComboBox_UnidadeMedida.setSelectedItem(dto.getUnidadeMedida());
-            for (int i = 0; i < jComboBox_Empresa.getItemCount(); i++) {
-                if (jComboBox_Empresa.getItemAt(i).startsWith(dto.getCnpjEmpresa())) {
-                    jComboBox_Empresa.setSelectedIndex(i);
-                }
-            }
-        } catch (IOException e) {
-            mostrarMensagem("Erro ao ler o arquivo: " + e.getMessage());
-        }
-        if (evt.getClickCount() == 2) {
-            consultarEstoque();
-        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_jTable_ProdutosMouseClicked
 
     private void jButton_BuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_BuscarActionPerformed
-        buscarProduto();
+        // TODO add your handling code here:
     }//GEN-LAST:event_jButton_BuscarActionPerformed
 
     /**
